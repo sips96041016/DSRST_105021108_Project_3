@@ -32,6 +32,7 @@ class Student{
             int i,j;
             Color rivalColor = (inputColor == Red)? Blue : Red;
             for(i=0;i<5;i++) for(j=0;j<6;j++) { _Max[i][j] = Max[i][j]; _Record[i][j] = Record[i][j]; }
+            if( color[2][0]==Black && color[0][1]==inputColor ) { x=0; y=1; return; }
             //е¤дUид╕и
             if(color[0][0] == White) { x=0; y=0; return; }
             else if(color[4][5] == White) { x=4; y=5; return; }
