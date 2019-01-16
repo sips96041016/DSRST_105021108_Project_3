@@ -40,7 +40,6 @@ class Student{
             //比對方先爆
             for(i=0;i<5;i++) for(j=0;j<6;j++)
                 if(color[i][j] == inputColor && remain(i,j) == 1 && be_force(i,j,Record,Max,color,false) ) { x=i; y=j; return; }
-
             //比對方接近爆(自己被威脅)
             for(i=0;i<5;i++) for(j=0;j<6;j++){
                 //若已追不上，直接算了；追得上的話，若對方沒有被我威脅，蓋上去
